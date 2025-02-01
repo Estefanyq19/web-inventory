@@ -7,7 +7,7 @@ Este proyecto es una **aplicación web** diseñada para la **gestión básica de
 ## 🛠 **Características Principales**
 
 - **Gestión de productos**: Crear, editar y eliminar productos con información como nombre, descripción, precio y cantidad inicial en inventario.
-- **Visualización de productos**: Listado de productos disponibles con opciones de búsqueda y filtros por precio o cantidad.
+- **Visualización de productos**: Listado de productos disponibles con opciones de búsqueda y filtros por nombre, rango de precios, rango de cantidades.
 - **Actualización de inventario**: Registro de entradas y salidas para mantener el stock actualizado.
 - **Autenticación**: Sistema de inicio de sesión único para asegurar el acceso a la aplicación.
 
