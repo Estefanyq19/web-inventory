@@ -16,7 +16,7 @@ Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
 
 1. Clona el repositorio en tu máquina local:  
 ```bash
-git clone <URL-DEL-REPOSITORIO>
+git clone https://github.com/Estefanyq19/web-inventory.git
 ```
 
 2. Ingresa a la carpeta del proyecto:  
