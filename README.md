@@ -1,34 +1,43 @@
-📌 Descripción del Proyecto
-Este proyecto es una aplicación web diseñada para la gestión básica de productos e inventarios. Permite a los usuarios administrar un catálogo de productos con funcionalidades esenciales como creación, edición, eliminación y actualización de inventario.
+# 📦 **Gestión de Inventarios** - Aplicación Web
 
-Características principales:
-Gestión de productos: Crear, editar y eliminar productos con información como nombre, descripción, precio y cantidad inicial en inventario.
-Visualización de productos: Listado de productos disponibles con opciones de búsqueda y filtros por precio o cantidad.
-Actualización de inventario: Registro de entradas y salidas para mantener el stock actualizado.
-Autenticación: Sistema de inicio de sesión único para asegurar el acceso a la aplicación.
+Este proyecto es una **aplicación web** diseñada para la **gestión básica de productos e inventarios**. Permite a los usuarios administrar un catálogo de productos con funcionalidades esenciales como creación, edición, eliminación y actualización de inventario.
 
-📌 Stack Tecnológico Utilizado
-- Laravel: Framework de PHP utilizado para el desarrollo backend y la gestión de la lógica de la aplicación.
-- Blade: Motor de plantillas de Laravel utilizado para la creación de las vistas dinámicas.
-- Breeze: Paquete de autenticación ligero de Laravel utilizado para el registro e inicio de sesión de usuarios.
-- SweetAlert2: Librería utilizada para mejorar la experiencia de usuario con alertas y notificaciones personalizadas.
-- CSRF Protection: Implementado en los formularios para prevenir ataques de falsificación de solicitudes entre sitios.
-- Middleware: Utilizado para la gestión de rutas y restricciones de acceso según la autenticación del usuario.
-- Tailwind CSS: Framework de diseño utilizado para estilizar la interfaz de usuario de manera rápida y eficiente.
+---
 
+## 🛠 **Características Principales**
 
+- **Gestión de productos**: Crear, editar y eliminar productos con información como nombre, descripción, precio y cantidad inicial en inventario.
+- **Visualización de productos**: Listado de productos disponibles con opciones de búsqueda y filtros por precio o cantidad.
+- **Actualización de inventario**: Registro de entradas y salidas para mantener el stock actualizado.
+- **Autenticación**: Sistema de inicio de sesión único para asegurar el acceso a la aplicación.
 
-## Requisitos Previos
+---
+
+## 💻 **Stack Tecnológico Utilizado**
+
+- **Laravel**: Framework de PHP utilizado para el desarrollo backend y la gestión de la lógica de la aplicación.
+- **Blade**: Motor de plantillas de Laravel utilizado para la creación de las vistas dinámicas.
+- **Breeze**: Paquete de autenticación ligero de Laravel utilizado para el registro e inicio de sesión de usuarios.
+- **SweetAlert2**: Librería utilizada para mejorar la experiencia de usuario con alertas y notificaciones personalizadas.
+- **CSRF Protection**: Implementado en los formularios para prevenir ataques de falsificación de solicitudes entre sitios.
+- **Middleware**: Utilizado para la gestión de rutas y restricciones de acceso según la autenticación del usuario.
+- **Tailwind CSS**: Framework de diseño utilizado para estilizar la interfaz de usuario de manera rápida y eficiente.
+
+---
+
+## 🛠 **Requisitos Previos**
 
 Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
 
-- **PHP** (versión 7.4 o superior)  
-- **Composer** (para gestionar las dependencias de PHP)  
-- **MySQL** o **MariaDB** (base de datos)  
-- **Node.js** (para la gestión de dependencias front-end y compilación de assets)  
-- **Git** (para clonar el repositorio)  
+- **PHP** (versión 7.4 o superior)
+- **Composer** (para gestionar las dependencias de PHP)
+- **MySQL** o **MariaDB** (base de datos)
+- **Node.js** (para la gestión de dependencias front-end y compilación de assets)
+- **Git** (para clonar el repositorio)
 
-### 1. Instrucciones de instalación
+---
+
+## 📝 **Instrucciones de Instalación**
 
 1. Clona el repositorio en tu máquina local:  
 ```bash
