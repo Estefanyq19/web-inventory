@@ -93,4 +93,9 @@ npm install sweetalert2
 ```bash
 php artisan serve
 ```
+## 🛠 **Credenciales de Acceso**
 
+Para acceder a la aplicación con las credenciales predeterminadas, utiliza los siguientes datos:
+
+- **Email**: `admin@gmail.com`
+- **Contraseña**: `admin`
