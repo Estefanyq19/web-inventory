@@ -1,4 +1,4 @@
-# 📦 **Gestión de Inventarios** - Aplicación Web
+# 📦 **Gestión de Inventarios**
 
 Este proyecto es una **aplicación web** diseñada para la **gestión básica de productos e inventarios**. Permite a los usuarios administrar un catálogo de productos con funcionalidades esenciales como creación, edición, eliminación y actualización de inventario.
 
