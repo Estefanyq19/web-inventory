@@ -45,7 +45,7 @@
             </select>
         </div>
 
-        !-- Botón para enviar el formulario y registrar el movimiento -->
+        <!-- Botón para enviar el formulario y registrar el movimiento -->
         <button type="submit" 
             class="bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition">
             Registrar Movimiento
