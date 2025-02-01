@@ -71,31 +71,30 @@ class ProductController extends Controller
         return view('products.edit', compact('product'));
     }
     
-    //Actualiza los datos de un producto en la bd
     public function update(Request $request, Product $product)
-    {
-        $request->validate([
-            'name' => 'required|max:255',
-            'description' => 'nullable',
-            'unit_price' => 'required|numeric',
-            'initial_quantity' => 'required|integer',
-        ]);
-        
-        // Actualiza los campos básicos
-        $product->update([
-            'name' => $request->name,
-            'description' => $request->description,
-            'unit_price' => $request->unit_price,
-            'initial_quantity' => $request->initial_quantity,
-        ]);
-        
-        // Solo actualiza current_quantity si no ha sido modificado manualmente antes
-        if ($product->current_quantity === $product->getOriginal('initial_quantity')) {
-            $product->current_quantity = $request->initial_quantity;
-            $product->save();
-        }
-        return redirect()->route('products.index')->with('success', 'Producto actualizado correctamente.');
-    }
+{
+    $request->validate([
+        'name' => 'required|max:255',
+        'description' => 'nullable',
+        'unit_price' => 'required|numeric',
+        'initial_quantity' => 'required|integer',
+    ]);
+
+    // Calculamos la diferencia entre la cantidad inicial anterior y la nueva
+    $diferencia = $request->initial_quantity - $product->getOriginal('initial_quantity');
+
+    // Actualiza los campos básicos
+    $product->update([
+        'name' => $request->name,
+        'description' => $request->description,
+        'unit_price' => $request->unit_price,
+        'initial_quantity' => $request->initial_quantity,
+        'current_quantity' => $product->current_quantity + $diferencia, // Ajusta la cantidad actual
+    ]);
+
+    return redirect()->route('products.index')->with('success', 'Producto actualizado correctamente.');
+}
+
     
     /**La función destroy en este caso, no va a eliminar un producto directamente también de la base de datos
      * sino que, solamente al eliminar un producto este se pondrá en estado inactivo(0) en nuestra bd y con el filtro 
